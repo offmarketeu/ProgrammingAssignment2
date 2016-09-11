@@ -1,5 +1,4 @@
 # Assigment 3 
-# See README.md for instructions on running the code and output from it
 
 # makeCacheMatrix is a function that returns a list of functions
 # Its purpose is to store a matrix and a cached value of the inverse of the 
