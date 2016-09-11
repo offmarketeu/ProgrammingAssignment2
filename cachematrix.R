@@ -1,6 +1,6 @@
-# Assigment 3 
+# Assignment 2
 
-# makeCacheMatrix is a function that returns a list of functions
+# makeCacheMatrix returns a list of functions
 # Its purpose is to store a matrix and a cached value of the inverse of the 
 # matrix. 
 # Contains the following functions:
@@ -43,7 +43,7 @@ makeCacheMatrix <- function(x = numeric()) {
 }
 
 
-# The following function calculates the inverse of a "special" matrix created with 
+# cacheSolve calculates the inverse of a "special" matrix created with 
 # makeCacheMatrix
 cacheSolve <- function(y, ...) {
         # get the cached value
@@ -53,12 +53,12 @@ cacheSolve <- function(y, ...) {
                 message("getting cached data")
                 return(inverse)
         }
-        # otherwise get the matrix, caclulate the inverse and store it in
+        # otherwise get the matrix, calculate the inverse and stores it in
         # the cache
         data <- y$getMatrix()
         inverse <- solve(data)
         y$cacheInverse(inverse)
         
-        # return the inverse
+        # returns the inverse
         inverse
 }
